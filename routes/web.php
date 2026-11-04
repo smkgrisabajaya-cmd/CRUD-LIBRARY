@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
-    return view('auth.register');
+    return view('auth.login');
 });
 
 Route::get('/register',[RegisterController::class,'index']);
