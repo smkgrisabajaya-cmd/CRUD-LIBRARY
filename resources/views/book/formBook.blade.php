@@ -26,20 +26,35 @@
     <div class="container" style="margin-top:100px;">
         <p class="fs-3">Details</p>
 
-        <div class="mt-5">
-            <p class="fw-semibold">Book Title</p>
-            <input type="text" name="title" class="form-control input-book" style="border:1px solid black; width:70%;">
-        </div>
-        <div class="mt-3">
-            <p class="fw-semibold">Author</p>
-            <input type="text" name="author" class="form-control input-book" style="border:1px solid black; width:70%;">
-        </div>
-        <div class="mt-3">
-            <p class="fw-semibold">Book Title</p>
-            <input type="number" name="title" class="form-control input-book" style="border:1px solid black; width:70%;">
-        </div>
+        <form action="postForm" method="post">
+            @csrf
+            <div class="mt-5">
+                <p class="fw-semibold">Book Title</p>
+                <input type="text" name="title" class="form-control input-book"
+                    style="border:1px solid black; width:70%;">
+            </div>
+            <div class="mt-3">
+                <p class="fw-semibold">Author</p>
+                <input type="text" name="author" class="form-control input-book"
+                    style="border:1px solid black; width:70%;">
+            </div>
 
-       
+            <div class="row mt-3">
+                <div class="col-4">
+                    <p class="fw-semibold">Stock</p>
+                    <input type="number" name="stock" class="form-control" min="0">
+                </div>
+
+                <div class="col-6">
+                    <p class="fw-semibold">Image</p>
+                    <input type="file" name="img">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-5" style="width:500px;">Send</button>
+        </form>
+    </div>
+
     </div>
 </body>
 

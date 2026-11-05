@@ -19,3 +19,4 @@ Route::post('/postLogin',[LoginController::class,'postLogin']);
 Route::get('/dashboard',[DashboardController::class,'index']);
 Route::get('/indexBook',[BookController::class,'index']);
 Route::get('/formBook',[FormController::class,'index']);
+Route::post('/postForm',[FormController::class,'postForm']);
