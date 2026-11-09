@@ -18,5 +18,6 @@ Route::get('/login',[LoginController::class,'index']);
 Route::post('/postLogin',[LoginController::class,'postLogin']);
 Route::get('/dashboard',[DashboardController::class,'index']);
 Route::get('/indexBook',[BookController::class,'index']);
-Route::get('/formBook',[FormController::class,'index']);
-Route::post('/postForm',[FormController::class,'postForm']);
+Route::get('/formBook',[BookController::class,'create']);
+Route::post('/postForm',[BookController::class,'store']);
+Route::get('/editForm',[BookController::class,'edit']);

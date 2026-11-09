@@ -28,7 +28,7 @@
     <div class="container mt-5">
         <div class="d-flex justify-content-center gap-3">
 
-            <div class="card col-7">
+            <div class="card col-6">
                 <div class="card-body">
                     <p class="ms-1 fs-2 fw-semibold">Welcome, {{ Auth()->User()->name }}</p>
                     <p>Welcome to the <b>Library Management System</b></p>
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="card col-8">
+            <div class="card col-6">
                 <div class="card-body">
                     <p class="fw-bold fs-2">Currently Borrowed Books</p>
                 </div>

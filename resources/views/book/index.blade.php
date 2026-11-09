@@ -33,7 +33,7 @@
                     <td>{{ $data->title }}</td>
                     <td>{{ $data->author }}</td>
                     <td>{{ $data->stock }}</td>
-                    <td></td>
+                    <td><button class="btn btn-warning"> <a href="/updateBook" style="color:white; text-decoration: none;">Edit</a></button></td>
                 </tr>
             @endforeach
         </tbody>
